@@ -18,3 +18,5 @@ docker compose up
 ```
 Here \<distro> refers to the specific ROS distributions, i.e., `kinetic`, `melodic`, `noetic`.
 
+- to open up the container, personally, I use remote-window and docker plugin provided by vscode
+
