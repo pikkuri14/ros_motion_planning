@@ -83,7 +83,7 @@ This repository provides the implementation of common **Motion Planning** algori
 
    **NOTE: Please refer to [#48](https://github.com/ai-winter/ros_motion_planning/issues/48) if you meet libignition dependency error.**
     ```bash
-    cd ros_motion_planning/
+    cd && cd ros_motion_planning/
     catkin_make
     # or catkin build
     # you may need to install it by: sudo apt install python-catkin-tools

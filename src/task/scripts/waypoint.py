@@ -45,7 +45,7 @@ def main():
     # Waits until the action server has started up and started listening for goals.
     client.wait_for_server()
 
-    waypoints = read_waypoints('/home/kompor/movel_task_ws/src/task/scripts/waypoint.txt')
+    waypoints = read_waypoints('./src/task/scripts/waypoint.txt')
 
     for x, y, yaw in waypoints:
         result = send_goal(client, x, y, yaw)

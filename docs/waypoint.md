@@ -12,9 +12,9 @@ Launch the package by :
 ```
 Edit the waypoint that we desire inside project/src/task/scripts/waypoint.txt with the format of x, y, tetha
    
-open the terminal in host machine, go into ros_motion_planning workspace and then source the package environment by :
+open the terminal in host machine, go into ros_motion_planning workspace and then source the workspace environment by :
 ```sh
-cd project && source devel/setup.bash
+cd ros_motion_planning && source devel/setup.bash
 ```   
 Open RVIZ
 ```sh   
