@@ -1,0 +1,20 @@
+version: '3'
+services:
+  robot:
+    image: ros-motion-planning:noetic
+    container_name: robot_container
+    environment:
+      - DISPLAY=${DISPLAY}
+      - QT_X11_NO_MITSHM=1
+      - ROS_MASTER_URI=http://localhost:11311
+      - ROS_IP=127.0.0.1
+      - XAUTHORITY:/tmp/.docker.xauth
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - /tmp/.docker.xauth:/tmp/.docker.xauth
+    network_mode: host
+    privileged: true
+    entrypoint: ["bash", "-c", "source /opt/ros/noetic/setup.bash && exec bash"]
+    stdin_open: true
+    tty: true
+    
