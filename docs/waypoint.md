@@ -4,11 +4,12 @@ Make sure to run the container as instructed in docs/docker.md
 open the container using remote-windows and docker plugin in the vscode by selecting the left-bottom icon, choose Attach to Running Container, and then enter the name of the container, in this case "robot_container".
 Open the terminal go into /project directory and source the package environment by :
 ```sh
-cd project && source devel/setup.bash
+cd project
 ```
 Launch the package by :
 ```sh
-./scripts/main.sh
+cd scripts
+./main.sh
 ```
 Edit the waypoint that we desire inside project/src/task/scripts/waypoint.txt with the format of x, y, tetha
    
