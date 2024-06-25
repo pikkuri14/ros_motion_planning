@@ -4,7 +4,7 @@ services:
     image: ros-motion-planning:noetic
     container_name: robot_container
     environment:
-      - DISPLAY=${DISPLAY}
+      - DISPLAY=${DISPLAY
       - QT_X11_NO_MITSHM=1
       - ROS_MASTER_URI=http://localhost:11311
       - ROS_IP=127.0.0.1
